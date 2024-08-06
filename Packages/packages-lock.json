@@ -182,6 +182,25 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.vrmc.gltf": {
+      "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/UniGLTF#v0.124.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.vrmc.vrmshaders": "0.124.2",
+        "com.unity.modules.animation": "1.0.0"
+      },
+      "hash": "dd50635bedc540517d5d112e2061b2cfd15fb0f3"
+    },
+    "com.vrmc.vrmshaders": {
+      "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRMShaders#v0.124.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.modules.imageconversion": "1.0.0"
+      },
+      "hash": "dd50635bedc540517d5d112e2061b2cfd15fb0f3"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
