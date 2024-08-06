@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build_osx:
     name: Build OSX 🍎
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Free Disk Space (Ubuntu)
         uses: jlumbroso/free-disk-space@main
@@ -70,7 +70,7 @@ jobs:
 
   build_windows:
     name: Build Windows 🪟
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Free Disk Space (Ubuntu)
         uses: jlumbroso/free-disk-space@main
@@ -162,7 +162,7 @@ jobs:
           large-packages: true
           docker-images: true
           swap-storage: true
-          
+
       # Checkout (without LFS)
       - name: Checkout repository
         uses: actions/checkout@v4
