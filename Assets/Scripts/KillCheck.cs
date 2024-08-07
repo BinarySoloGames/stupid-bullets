@@ -30,7 +30,7 @@ public class KillCheck : MonoBehaviour
 
     public void Update()
     {
-        if (checkForKill && transform.position.y < -500.0f)
+        if (checkForKill && transform.position.y < -25.0f)
         {
             Destroy(gameObject);
         }

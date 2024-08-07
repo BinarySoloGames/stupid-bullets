@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="TopUI" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="ScoreUI" style="flex-grow: 0; align-items: flex-start; align-self: flex-start; width: 150px;">
+            <ui:VisualElement name="DiscoveryPercentElement" style="flex-grow: 0; background-image: none; align-items: flex-start; width: initial; height: initial; flex-direction: row;">
+                <ui:VisualElement name="Icon" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Images/city.png?fileID=2800000&amp;guid=19319f33c9b22f94dbdae2fb6de13c93&amp;type=3#city&quot;); width: 50px; height: 50px; background-color: rgba(255, 255, 255, 0); -unity-background-image-tint-color: rgb(255, 255, 255); -unity-text-outline-width: 0; -unity-text-outline-color: rgba(0, 0, 0, 0); -unity-background-scale-mode: stretch-to-fill; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;" />
+                <ui:Label tabindex="-1" text="89.9%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DiscoveryPercentValue" style="font-size: 20px; -unity-text-align: upper-center; flex-grow: 0; justify-content: center; align-items: center; align-self: center; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); -unity-font-style: bold;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ScoreElement" style="flex-grow: 0; flex-direction: row;">
+                <ui:VisualElement name="Icon" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Images/high-score.png?fileID=2800000&amp;guid=35e52b237d624e140871ab7e611e5c66&amp;type=3#high-score&quot;); width: 50px; height: 50px; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ScoreValue" style="font-size: 20px; -unity-text-align: upper-center; align-self: center; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; -unity-font-style: bold; -unity-text-outline-color: rgb(0, 0, 0);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="TimeUI" style="flex-grow: 1; -unity-text-align: upper-center;">
+            <ui:Label tabindex="-1" text="10:00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TimeLabel" style="font-size: 50px; color: rgb(255, 255, 255); -unity-font-style: bold; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Spacer" style="flex-grow: 0; width: 150px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="GameOverElement" style="flex-grow: 1; visibility: hidden;">
+        <ui:Label tabindex="-1" text="Game Over" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 100px; color: rgb(255, 0, 0); -unity-text-outline-width: 1px; -unity-font-style: bold; -unity-text-outline-color: rgb(0, 0, 0); -unity-text-align: upper-center;" />
+    </ui:VisualElement>
+</ui:UXML>

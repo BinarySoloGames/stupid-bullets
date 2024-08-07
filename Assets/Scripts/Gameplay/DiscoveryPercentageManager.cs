@@ -25,8 +25,8 @@ namespace Gameplay
         public void HandleGoalObjectDestroyed(GoalObject goalObject)
         {
             float oldPercent = discoveryPercent;
-            objectsDestroyed += goalObject.Score;
-            discoveryPercent = objectsTotal / objectsDestroyed;
+            objectsDestroyed += 1.0f;
+            discoveryPercent = (objectsDestroyed / objectsTotal) * 100.0f;
             OnDiscoveryPercentChanged?.Invoke(oldPercent, discoveryPercent);
 
             goalObject.OnGoalObjectDestroyed -= HandleGoalObjectDestroyed;
