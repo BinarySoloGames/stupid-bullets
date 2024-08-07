@@ -44,11 +44,6 @@ public class KillCheck : MonoBehaviour
         {
             transform.DetachChildren();
         }
-        Rigidbody body = other.gameObject.GetComponent<Rigidbody>();
-        if (body)
-        {
-            body.isKinematic = false;
-        }
     }
 
     public void OnTriggerEnter(Collider other)
