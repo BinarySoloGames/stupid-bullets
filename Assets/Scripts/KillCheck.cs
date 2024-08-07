@@ -7,6 +7,7 @@ public class KillCheck : MonoBehaviour
 {
     [SerializeField]
     private bool checkForKill = false;
+    public bool unparentChildren = false;
     public bool CheckForKill
     {
         get
@@ -39,6 +40,15 @@ public class KillCheck : MonoBehaviour
     public void OnCollisionEnter(Collision other)
     {
         CheckForKill = true;
+        if (unparentChildren)
+        {
+            transform.DetachChildren();
+        }
+        Rigidbody body = other.gameObject.GetComponent<Rigidbody>();
+        if (body)
+        {
+            body.isKinematic = false;
+        }
     }
 
     public void OnTriggerEnter(Collider other)

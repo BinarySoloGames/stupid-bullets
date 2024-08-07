@@ -32,6 +32,12 @@ public class Explosion : MonoBehaviour
     
     public void OnTriggerEnter(Collider other)
     {
-        other.attachedRigidbody.AddExplosionForce(force, other.ClosestPoint(transform.position), collider.radius);
+        // other.attachedRigidbody.AddExplosionForce(force, other.ClosestPoint(transform.position), collider.radius);
+        // Rigidbody body = other.gameObject.GetComponent<Rigidbody>();
+        if (other.attachedRigidbody)
+        {
+            other.attachedRigidbody.isKinematic = false;
+            other.attachedRigidbody.AddExplosionForce(force, other.ClosestPoint(transform.position), collider.radius);
+        }
     }
 }
