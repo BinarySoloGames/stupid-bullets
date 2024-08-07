@@ -193,6 +193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 1000
-  endRadius: 3
-  growDuration: 1.25
-  shrinkDuration: 0.25
+  endRadius: 7
+  growDuration: 0.2
+  shrinkDuration: 0.5

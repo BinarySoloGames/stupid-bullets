@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7749809207157034523}
   - component: {fileID: 6325248847605447339}
   - component: {fileID: 91614092396635566}
+  - component: {fileID: 4923966615760622118}
   m_Layer: 0
   m_Name: NukeTest
   m_TagString: Untagged
@@ -118,6 +119,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkForKill: 1
+  unparentChildren: 0
+--- !u!114 &4923966615760622118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991001515421240255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f15527ad5ba86c4b8e228a8a08ff7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 8532180233653488781}
 --- !u!1001 &1202171261077071279
 PrefabInstance:
   m_ObjectHideFlags: 0
