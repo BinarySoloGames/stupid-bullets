@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
-    [SerializeField] private Transform spawnPoint;
-    [SerializeField] private GameObject bullet;
-    [SerializeField] private GameObject nuke;
+    [SerializeField] 
+    private Transform spawnPoint;
+    [SerializeField] 
+    private List<GameObject> bullets;
     
     // Start is called before the first frame update
     void Start()
@@ -17,16 +18,9 @@ public class GunController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            var bulletInstance = GameObject.Instantiate(bullet);
-            bulletInstance.transform.position = spawnPoint.position;
-            bulletInstance.transform.forward = spawnPoint.forward;
-            bulletInstance.GetComponent<Bullet>().Fire();
-        }
-        else if (Input.GetKeyDown(KeyCode.O))
-        {
-            var bulletInstance = GameObject.Instantiate(nuke);
+            var bulletInstance = GameObject.Instantiate(bullets.PickRandom());
             bulletInstance.transform.position = spawnPoint.position;
             bulletInstance.transform.forward = spawnPoint.forward;
             bulletInstance.GetComponent<Bullet>().Fire();
