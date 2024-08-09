@@ -22,6 +22,9 @@ public class TimeManager : MonoBehaviour
         {
             FindObjectOfType<FirstPersonController>().enabled = false;
             FindObjectOfType<GunController>().enabled = false;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            enabled = false;
         }
     }
 }
