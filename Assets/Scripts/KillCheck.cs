@@ -8,6 +8,7 @@ public class KillCheck : MonoBehaviour
     [SerializeField]
     private bool checkForKill = false;
     public bool unparentChildren = false;
+    public bool unparentSiblings = false;
     public bool CheckForKill
     {
         get
@@ -43,6 +44,11 @@ public class KillCheck : MonoBehaviour
         if (unparentChildren)
         {
             transform.DetachChildren();
+        }
+
+        if (unparentSiblings && transform.parent != null)
+        {
+            transform.parent.DetachChildren();
         }
     }
 

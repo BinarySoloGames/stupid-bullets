@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 6325248847605447339}
   - component: {fileID: 91614092396635566}
   - component: {fileID: 4923966615760622118}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NukeTest
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 35
+  ProjectileID: -1
 --- !u!114 &7749809207157034523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +147,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: nuke
       objectReference: {fileID: 0}
+    - target: {fileID: -9202605092671148497, guid: 11124f6e98aa90d4d88aabdafb4366dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8609663637447065618, guid: 11124f6e98aa90d4d88aabdafb4366dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4467138112451190354, guid: 11124f6e98aa90d4d88aabdafb4366dc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -210,6 +221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594762170683619541, guid: 11124f6e98aa90d4d88aabdafb4366dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

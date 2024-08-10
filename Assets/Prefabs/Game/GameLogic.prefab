@@ -72,5 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d3c89f35e6b1844815006f339a48c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreController: {fileID: 0}
+  AreaTimeBonus: 30
   gameLength: 120
   TimeLeft: 120
