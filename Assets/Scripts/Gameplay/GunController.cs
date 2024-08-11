@@ -7,13 +7,9 @@ public class GunController : MonoBehaviour
     [SerializeField] 
     private Transform spawnPoint;
     [SerializeField] 
+    private int numSpecialBullets = 5;
+    [SerializeField] 
     private List<GameObject> bullets;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -24,6 +20,14 @@ public class GunController : MonoBehaviour
             bulletInstance.transform.position = spawnPoint.position;
             bulletInstance.transform.forward = spawnPoint.forward;
             bulletInstance.GetComponent<Bullet>().Fire();
+        }
+    }
+
+    public void ChangeBullet(Bullet specialBullet)
+    {
+        for (int i = 0; i < numSpecialBullets; i++)
+        {
+            bullets[bullets.Count - i - 1] = specialBullet.gameObject;
         }
     }
 }
