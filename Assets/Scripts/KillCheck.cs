@@ -43,6 +43,14 @@ public class KillCheck : MonoBehaviour
         CheckForKill = true;
         if (unparentChildren)
         {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                Rigidbody childBody = transform.GetChild(i).GetComponent<Rigidbody>();
+                if (childBody != null)
+                {
+                    childBody.isKinematic = false;
+                }
+            }
             transform.DetachChildren();
         }
 
