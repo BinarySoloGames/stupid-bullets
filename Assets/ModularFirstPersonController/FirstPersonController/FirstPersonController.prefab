@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 7028506417916885515}
+  numSpecialBullets: 5
   bullets:
   - {fileID: 6991001515421240255, guid: 7f0ceba263f604638bccae3c8fbcd015, type: 3}
 --- !u!1 &3242498810395237137
@@ -361,7 +362,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8304df63c4cd142d9a45fc19cbae648a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.668
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
     private Rigidbody body;
     private AudioSource audioSource;
 
-    private AudioClip impactClip;
+    public AudioClip ShootClip;
 
     private void Awake()
     {
@@ -24,6 +24,13 @@ public class Bullet : MonoBehaviour
     {
         ProjectileID = ++ProjectileIDGenerator;
         body.AddForce(transform.forward * Speed);
-        audioSource.Play();
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (audioSource.isPlaying == false)
+        {
+            audioSource.Play();
+        }
     }
 }

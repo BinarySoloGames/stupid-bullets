@@ -10,7 +10,9 @@ public class GunController : MonoBehaviour
     private int numSpecialBullets = 5;
     [SerializeField] 
     private List<GameObject> bullets;
-
+    [SerializeField] 
+    private AudioSource shootSource;
+    
     // Update is called once per frame
     void Update()
     {
@@ -19,7 +21,10 @@ public class GunController : MonoBehaviour
             var bulletInstance = GameObject.Instantiate(bullets.PickRandom());
             bulletInstance.transform.position = spawnPoint.position;
             bulletInstance.transform.forward = spawnPoint.forward;
-            bulletInstance.GetComponent<Bullet>().Fire();
+            Bullet bullet = bulletInstance.GetComponent<Bullet>();
+            bullet.Fire();
+            shootSource.clip = bullet.ShootClip;
+            shootSource.Play();
         }
     }
 
