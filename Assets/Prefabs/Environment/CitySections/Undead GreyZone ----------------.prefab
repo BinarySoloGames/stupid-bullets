@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 1793231780293330189}
   - component: {fileID: 6821201193618029688}
   - component: {fileID: 7586413530472579552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TrainYard Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

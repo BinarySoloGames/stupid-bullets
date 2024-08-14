@@ -15,7 +15,6 @@ public class AreaTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered area.");
         if (other.gameObject.CompareTag("Player"))
         {
             AudioSource bgmPlayer = other.gameObject.GetComponent<AudioSource>();

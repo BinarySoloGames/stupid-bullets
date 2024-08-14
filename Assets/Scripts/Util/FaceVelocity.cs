@@ -20,6 +20,9 @@ public class FaceVelocity : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.forward = body.velocity;
+        if (body.velocity != Vector3.zero)
+        {
+            transform.forward = body.velocity;
+        }
     }
 }

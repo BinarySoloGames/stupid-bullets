@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8688447129804136811}
   - component: {fileID: 7393895658062366829}
   - component: {fileID: 5291382078832362504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Race Track Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
