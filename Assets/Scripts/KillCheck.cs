@@ -32,9 +32,21 @@ public class KillCheck : MonoBehaviour
 
     public void Update()
     {
-        if (checkForKill && transform.position.y < -25.0f)
+        if (gameObject.CompareTag("Bullet"))
         {
-            Destroy(gameObject);
+            if (checkForKill && transform.position.y < -25)
+            {
+                Instantiate(ContentLibrary.instance.ringoutVFX, transform.position, default);
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            if (checkForKill && transform.position.y < 0)
+            {
+                Instantiate(ContentLibrary.instance.ringoutVFX, transform.position, default);
+                Destroy(gameObject);
+            }
         }
     }
 

@@ -19,7 +19,7 @@ public class ExploreBullet : MonoBehaviour
         if (canMove)
         {
             Vector3 xz = transform.forward * speed;
-            xz.y = 0.0f;
+            xz.y = body.velocity.y;
             body.velocity = xz;
         }
     }
