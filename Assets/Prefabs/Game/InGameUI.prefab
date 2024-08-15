@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2510821735842936730}
   - component: {fileID: 2225184613851037918}
   - component: {fileID: 550046072727208756}
+  - component: {fileID: 4303590315681002362}
+  - component: {fileID: 2574187185515192693}
   m_Layer: 5
   m_Name: InGameUI
   m_TagString: Untagged
@@ -91,3 +93,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   discovery: {fileID: 0}
+--- !u!114 &4303590315681002362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622843709377796903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbed9c3ea0e4901bb54b8ae9d394346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeManager: {fileID: 0}
+--- !u!114 &2574187185515192693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622843709377796903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8661a8e79205b42b6a31d548665a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun: {fileID: 0}
+  normalBullet: {fileID: 3526059247731881639, guid: 5b12b47aba953b74692e757d99dfcc58,
+    type: 3}
+  doc: {fileID: 335577984538447927}

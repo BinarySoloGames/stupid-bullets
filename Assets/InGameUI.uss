@@ -1,0 +1,52 @@
+.ammo-bar {
+    width: 50px;
+    height: 16px;
+    background-color: rgb(224, 224, 224);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 0;
+    max-width: 50px;
+    max-height: 16px;
+    min-width: 50px;
+    min-height: 16px;
+}
+
+.ammo-bar-special {
+    width: 50px;
+    height: 16px;
+    background-color: rgb(219, 191, 15);
+    border-left-color: rgb(255, 245, 47);
+    border-right-color: rgb(255, 245, 47);
+    border-top-color: rgb(255, 245, 47);
+    border-bottom-color: rgb(255, 245, 47);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 0;
+    align-self: center;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 50px;
+    max-height: 16px;
+    min-width: 50px;
+    min-height: 16px;
+}

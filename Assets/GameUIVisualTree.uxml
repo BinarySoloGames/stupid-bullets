@@ -1,4 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/InGameUI.uss?fileID=7433441132597879392&amp;guid=65303ffacd313704cbfb6c74358b5998&amp;type=3#InGameUI" />
     <ui:VisualElement name="TopUI" picking-mode="Ignore" style="flex-grow: 1; flex-direction: row;">
         <ui:VisualElement name="ScoreUI" style="flex-grow: 0; align-items: flex-start; align-self: flex-start; width: 150px;">
             <ui:VisualElement name="DiscoveryPercentElement" style="flex-grow: 0; background-image: none; align-items: flex-start; width: initial; height: initial; flex-direction: row;">
@@ -21,4 +22,5 @@
             <ui:Button text="Replay" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TryAgainButton" style="font-size: 36px; color: rgb(255, 255, 255); -unity-font-style: bold; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); background-color: rgb(79, 79, 79); width: 500px; height: 100px; align-self: center; margin-top: 100px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-left-color: rgb(164, 164, 164); border-right-color: rgb(164, 164, 164); border-top-color: rgb(164, 164, 164); border-bottom-color: rgb(164, 164, 164); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; text-shadow: 2px 2px 0 rgb(0, 0, 0);" />
         </ui:VisualElement>
     </ui:VisualElement>
+    <ui:VisualElement name="AmmoUI" style="flex-grow: 0; align-self: flex-end; position: absolute; width: 50px; height: 250px; bottom: 10px; justify-content: flex-start; align-items: center; flex-shrink: 0; flex-direction: column-reverse; margin-right: 0; right: 10px;" />
 </ui:UXML>
