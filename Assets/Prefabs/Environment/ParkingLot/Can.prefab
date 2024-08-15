@@ -278,7 +278,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f6679d7e7c4bca8e97e1c8d5b6cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: 31caea4640e90854981ffa9b65b61291, type: 3}
+  - {fileID: 8300000, guid: 0cb8b77c8ecebc2419a728278a702cf3, type: 3}
+  - {fileID: 8300000, guid: 686eb2b33d4d189488c0919b3e207bcf, type: 3}
 --- !u!54 &8246080301763486753
 Rigidbody:
   m_ObjectHideFlags: 0
