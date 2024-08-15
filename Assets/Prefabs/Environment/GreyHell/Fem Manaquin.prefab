@@ -173,6 +173,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: 20
+  TimeBonus: 0
+  ProjectileID: -1
+  Area: 0
 --- !u!114 &6794040912473509092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,3 +190,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkForKill: 0
   unparentChildren: 0
+  unparentSiblings: 0
+  unparent: 1

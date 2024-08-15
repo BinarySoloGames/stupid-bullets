@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Gameplay;
 using UnityEngine;
 
 public class KillCheck : MonoBehaviour
@@ -9,6 +10,7 @@ public class KillCheck : MonoBehaviour
     private bool checkForKill = false;
     public bool unparentChildren = false;
     public bool unparentSiblings = false;
+    public bool unparent = false;
     public bool CheckForKill
     {
         get
@@ -69,6 +71,19 @@ public class KillCheck : MonoBehaviour
         if (unparentSiblings && transform.parent != null)
         {
             transform.parent.DetachChildren();
+        }
+
+        if (unparent && other.gameObject.CompareTag("Bullet"))
+        {
+            transform.SetParent(null);
+        }
+        else if (unparent)
+        {
+            GoalObject otherGoalObject = other.gameObject.GetComponent<GoalObject>();
+            if (otherGoalObject != null & otherGoalObject.ProjectileID > 0)
+            {
+                transform.SetParent(null);
+            }
         }
     }
 
