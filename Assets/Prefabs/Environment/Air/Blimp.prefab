@@ -26,17 +26,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 45411239004b1314aaefa253a9d025f3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 45411239004b1314aaefa253a9d025f3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 45411239004b1314aaefa253a9d025f3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 45411239004b1314aaefa253a9d025f3,
         type: 3}
@@ -219,8 +219,114 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5944280038576747814}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45411239004b1314aaefa253a9d025f3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3110421565670571208}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45411239004b1314aaefa253a9d025f3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2235016049522536481}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45411239004b1314aaefa253a9d025f3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1962231036090066280}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 45411239004b1314aaefa253a9d025f3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2064487368401970335}
   m_SourcePrefab: {fileID: 100100000, guid: 45411239004b1314aaefa253a9d025f3, type: 3}
+--- !u!1 &8264886972126346681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 45411239004b1314aaefa253a9d025f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 9111819128675827944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &3110421565670571208
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8264886972126346681}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2235016049522536481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8264886972126346681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e233e3b560654b57af97a3bd09e40b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Score: 100
+  TimeBonus: 6
+  ProjectileID: -1
+  Area: 0
+--- !u!114 &1962231036090066280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8264886972126346681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a63eaf68c51ac641bbfaeb7dd0a8307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkForKill: 0
+  unparentChildren: 0
+  unparentSiblings: 0
+  unparent: 0
+--- !u!114 &2064487368401970335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8264886972126346681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a161e4cf6bb314d32b472606bd277632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  nextPoint: 0
+  speed: 2
 --- !u!4 &8789080637306332931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 45411239004b1314aaefa253a9d025f3,

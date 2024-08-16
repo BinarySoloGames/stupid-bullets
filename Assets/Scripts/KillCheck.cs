@@ -11,6 +11,7 @@ public class KillCheck : MonoBehaviour
     public bool unparentChildren = false;
     public bool unparentSiblings = false;
     public bool unparent = false;
+    public bool killVelocity = false;
     public bool CheckForKill
     {
         get
@@ -84,6 +85,13 @@ public class KillCheck : MonoBehaviour
             {
                 transform.SetParent(null);
             }
+        }
+
+        if (killVelocity)
+        {
+            Rigidbody body = GetComponent<Rigidbody>();
+            body.useGravity = true;
+            body.velocity = body.velocity / 3.0f;
         }
     }
 

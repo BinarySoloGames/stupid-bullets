@@ -31,6 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6542910846313961532}
+  - {fileID: 9022140185896959650}
   - {fileID: 6001293591655537909}
   - {fileID: 2375171573007271949}
   - {fileID: 8948914590808726277}
@@ -85,6 +86,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 781d256884c33b34fa57e2ea5790994b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2858815188172930652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9022140185896959650}
+  m_Layer: 0
+  m_Name: SpawnPointLot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9022140185896959650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2858815188172930652}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.9795304, z: -0, w: 0.20129624}
+  m_LocalPosition: {x: 4.73, y: 4.06, z: -1.67}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5974456642339461408}
+  m_LocalEulerAnglesHint: {x: 0, y: -156.774, z: 0}
 --- !u!1 &2928360574932857146
 GameObject:
   m_ObjectHideFlags: 0

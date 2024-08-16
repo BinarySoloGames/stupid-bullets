@@ -181,6 +181,7 @@ MonoBehaviour:
   checkForKill: 0
   unparentChildren: 0
   unparentSiblings: 0
+  unparent: 0
 --- !u!114 &7421295634313769858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,4 +306,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96f6679d7e7c4bca8e97e1c8d5b6cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: 099cbc82ccd76467083fadf8e3093cae, type: 3}
