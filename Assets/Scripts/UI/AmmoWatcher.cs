@@ -20,6 +20,10 @@ public class AmmoWatcher : MonoBehaviour
         gun.OnBulletLoaded += OnBulletsLoaded;
 
         ammoElement = doc.rootVisualElement.Q<VisualElement>("AmmoUI");
+        if (gun.loadedBullets.Count > 0)
+        {
+            OnBulletsLoaded();
+        }
     }
 
     private void OnBulletsLoaded()
