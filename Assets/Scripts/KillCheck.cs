@@ -81,7 +81,7 @@ public class KillCheck : MonoBehaviour
         else if (unparent)
         {
             GoalObject otherGoalObject = other.gameObject.GetComponent<GoalObject>();
-            if (otherGoalObject != null & otherGoalObject.ProjectileID > 0)
+            if (otherGoalObject != null && otherGoalObject.ProjectileID > 0)
             {
                 transform.SetParent(null);
             }
