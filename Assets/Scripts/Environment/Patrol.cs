@@ -23,6 +23,7 @@ public class PatrolScript : MonoBehaviour
     {
         float duration = Vector3.Distance(transform.position, points[nextPoint].position) / speed;
         moveTween = transform.DOMove(points[nextPoint].position, duration)
+            .SetEase(Ease.Linear)
             .OnComplete(MoveToNextPoint);
         transform.LookAt(points[nextPoint].position);
     }
@@ -37,6 +38,7 @@ public class PatrolScript : MonoBehaviour
         
         float duration = Vector3.Distance(transform.position, points[nextPoint].position) / speed;
         moveTween = transform.DOMove(points[nextPoint].position, duration)
+            .SetEase(Ease.Linear)
             .OnComplete(MoveToNextPoint);
         transform.LookAt(points[nextPoint].position);
     }
