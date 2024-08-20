@@ -1,9 +1,5 @@
 name: Actions 😎
 
-on:
-  schedule:
-    - cron: '55 23 * * *'
-
 jobs:
   # build_osx:
   #   name: Build OSX 🍎
